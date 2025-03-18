@@ -1,6 +1,5 @@
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 700;
 }
 body {
   font-family: Arial, sans-serif;
@@ -11,7 +10,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #f4f4f9;
-  background-image: url(pexels-photobombcars-11211273.jpg);
+
   background-size: cover;
   overflow: hidden;
   max-height: 100vh;
@@ -37,19 +36,65 @@ body {
   color: #333;
 }
 .profile p {
-  color: white;
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
 }
-.profile a {
-  display: inline-block;
-  margin: 10px;
-  text-decoration: none;
+
+.instagram-button {
+  padding: 12px 24px;
+  font-size: 16px;
   color: white;
-  background: orange;
-  padding: 10px 20px;
-  border-radius: 5px;
+  background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
   font-weight: bold;
-  transition: background 0.3s;
+  text-decoration: none;
 }
-.profile a:hover {
-  background: #5548c8;
+
+/* Hover effect */
+.instagram-button:hover {
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  transform: scale(1.05);
+}
+
+/* Focus effect for accessibility */
+.instagram-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+}
+
+.github-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background: #24292f; /* GitHub dark gray */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.github-button:hover {
+  background: #3d444d; /* Slightly lighter gray for hover */
+  transform: scale(1.05);
+}
+
+/* Focus effect for accessibility */
+.github-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.background-clip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
